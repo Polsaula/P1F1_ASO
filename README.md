@@ -54,7 +54,7 @@ char *argv2[] = { "/home/pi/<desired_path>/P1F1/buttonScripts/button2Script.sh",
 char *argv3[] = { "/home/pi/<desired_path>/P1F1/buttonScripts/button3Script.sh", NULL };
 char *argv4[] = { "/home/pi/<desired_path>/P1F1/buttonScripts/button4Script.sh", NULL };
 ```
-If the project has been installed directly inside pi's user:
+Or if the project has been installed directly inside pi's user:
 ```
 char *argv1[] = { "/home/pi/P1F1/buttonScripts/button2Script.sh", NULL };
 char *argv2[] = { "/home/pi/P1F1/buttonScripts/button2Script.sh", NULL };
