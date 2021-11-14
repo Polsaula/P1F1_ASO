@@ -45,3 +45,21 @@ And then remove all unwanted files generated on the project folders:
 ```
 make clean
 ```
+
+### Important
+This LKM is written based on my Rasperry Pi's folders so, while the Makefile it's supposed adapt to every device, there are some lines on the LKM file that contain a hardcoded path of my own machine. For a proper execution these lines (150-153) must be changed to the directory where the project has been downloaded:
+```
+char *argv1[] = { "/home/pi/<desired_path>/P1F1/buttonScripts/button2Script.sh", NULL };
+char *argv2[] = { "/home/pi/<desired_path>/P1F1/buttonScripts/button2Script.sh", NULL };
+char *argv3[] = { "/home/pi/<desired_path>/P1F1/buttonScripts/button3Script.sh", NULL };
+char *argv4[] = { "/home/pi/<desired_path>/P1F1/buttonScripts/button4Script.sh", NULL };
+```
+If the project has been installed directly inside pi's user:
+```
+char *argv1[] = { "/home/pi/P1F1/buttonScripts/button2Script.sh", NULL };
+char *argv2[] = { "/home/pi/P1F1/buttonScripts/button2Script.sh", NULL };
+char *argv3[] = { "/home/pi/P1F1/buttonScripts/button3Script.sh", NULL };
+char *argv4[] = { "/home/pi/P1F1/buttonScripts/button4Script.sh", NULL };
+```
+
+
