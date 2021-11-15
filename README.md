@@ -1,6 +1,6 @@
 # P1F1_ASO
 
-_This is the first part (of two) of a univesity project where I'be been asked to implement a Loadable Kernel Module (LKM) on a Raspberry Pi_
+_This is the first part (of two) of a univesity project where I've been asked to implement a Loadable Kernel Module (LKM) on a Raspberry Pi_
 
 ### Description
 
